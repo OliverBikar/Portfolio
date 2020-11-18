@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Booking Confirmation </title> 
+		<link rel = "stylesheet" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Concert+One|Dosis:700|Trochut:700" rel="stylesheet">
+	</head>
+	
+	<body>
+
+	<div class = "navigation">
+	<ul>
+	  <div id = "logo"><img src="brookes_logo.png" width="190px" height="175px"></div>	
+	  <br>
+	  <li><a href="dashboard.html">Home</a></li>
+	  <li><a href="roomSelect.html"><font color="#009999">Create Booking</a></li>
+	  <li><a href="manageBooking.html">Manage Booking</a></li>
+	  <li><a href="bookingHistory.html">Booking History</a></li>
+	  <li><a href="signOut.html">Sign Out</a></li>
+	</ul>
+	</div>
+	<div class="container">	
+      <ul class="progressbar">
+          <li class= "active">Select Room</li>
+          <li class= "active">Select Date and Time</li>
+          <li class= "active">Booking Summary</li>
+          <li class= "active">Terms and Conditions</li>
+		  <li class= "active">Booking Confirmation</li>
+	</ul>
+	</div>
+	<div class = "subheading">
+		<h2> Booking Confirmation </h2>
+	</div>
+
+	
+	<div class = "conditionsContent">
+	<p> <b> Date:</b> 10/04/18 <br>
+	<br><b> Start Time: </b> 09:00am <br>
+	<br><b>End Time:</b> 11:00am <br>
+	<br><b>Room:</b> Studio 1 <br>
+	<br><b>Status:</b> Confirmed<br>
+	<br><b>Reason for Booking:</b> Use recording studio for coursework</p>
+	
+	
+	
+	<div class= "printButton">
+	<input onclick="window.print(); return false;" type="submit" value="Print Confirmation">
+	</div>
+	
+	<div class= "emailButton">
+	<input type="submit" onclick="return confirm('An email with the booking summary has been sent to your Brookes Gmail. Thank you.')" value="Send Confirmation Email" />
+	</div>
+	
+
+	
+</body>
+</html>
