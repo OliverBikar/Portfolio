@@ -1,0 +1,1 @@
+There are ships which are secretly placed onto the grid.,You must destroy every ship on the grid.,Click a square on the grid to launch an attack. If the colour changes to:,Red: part of the ship has been hit.,White: you have missed.

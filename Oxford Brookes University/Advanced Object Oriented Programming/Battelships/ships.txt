@@ -1,0 +1,5 @@
+Carrier,2,2,true
+Patrol Boat,5,2,false
+Battleship,3,9,false
+Destroyer,8,3,true
+Patrol Boat,9,8,true
