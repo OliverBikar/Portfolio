@@ -1,0 +1,280 @@
+{
+  "id": "1888487f-d654-4ee0-b033-14f6b1703012",
+  "version": "1.1",
+  "name": "TestCase_16072277",
+  "url": "https://www.leeds.ac.uk",
+  "tests": [{
+    "id": "57b15d88-8d3c-4e30-aea1-2489a0cdde3f",
+    "name": "TestCase_16072277",
+    "commands": [{
+      "id": "0c535f4f-2fcf-44ae-a6a1-612a6f000b26",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58fee9e9-3839-4320-8988-8f693de2b324",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Computer Science with Mathematics\", \"Computer Science with Artificial Intelligence\", \"Computer Science\"]",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "ec4b235b-93b2-4d59-a214-9ce952ee4637",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4a8e3ca-23b5-488b-bc32-62cc1a338de8",
+      "comment": "",
+      "command": "store",
+      "target": "2",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "c3383c9d-6662-4f6a-b417-0759176e38d3",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "University of Leeds",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69ca2f02-a13b-4531-adea-69fe18657e65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a79a34ae-5106-423e-98df-5339e03cb245",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a.navicon-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f5fe2dd-15aa-40ef-baca-ac118e8a9faa",
+      "comment": "",
+      "command": "click",
+      "target": "css=a.navicon-button",
+      "targets": [
+        ["css=a.navicon-button", "css"],
+        ["css=.navicon-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Menu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '?header=1#navbutton')]", "xpath:href"],
+        ["xpath=//nav/div/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25c66828-8d12-4aba-a61f-5c438295190e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=navItem1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10b6a8cd-a612-46e6-a087-21eb8900c2b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=navItem1000",
+      "targets": [
+        ["id=navItem1000", "id"],
+        ["css=#navItem1000", "css"],
+        ["css=#navItem1000", "css:finder"],
+        ["xpath=//a[contains(text(),'Study')]", "xpath:link"],
+        ["xpath=//a[@id='navItem1000']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '?header=1&navItem=1000')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e0e4f03-596b-4c0e-b1f3-f05532e59f81",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=navItem116000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3a0c4f9-fef1-4aa1-a7f2-87d5c11fe2f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=navItem116000",
+      "targets": [
+        ["id=navItem116000", "id"],
+        ["css=#navItem116000", "css"],
+        ["css=#navItem116000", "css:finder"],
+        ["xpath=//a[contains(text(),'Undergraduate')]", "xpath:link"],
+        ["xpath=//a[@id='navItem116000']", "xpath:attributes"],
+        ["xpath=//div[@id='flyout1000']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.leeds.ac.uk/info/116000/undergraduate')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fc43064-eaf1-4332-b1e4-c1364382e661",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "University of Leeds | Study > Undergraduate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74f278b2-8d32-44c4-a50f-ae593ef683ce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn--hollow",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30eb4547-f525-48b5-97fd-447a3c7c2236",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--hollow",
+      "targets": [
+        ["css=.btn--hollow", "css:finder"],
+        ["xpath=(//a[contains(text(),'Course Search')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://courses.leeds.ac.uk/?type=UG']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9383622-2254-4367-bdd3-22878745f0c0",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "University of Leeds | Course Search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aae6f868-6cb6-4e05-9e7d-855fb81d6b87",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=searchCourse",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a77af6d5-ef46-42e4-b74c-6ada194800cb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/div[3]/main/div/div/form/div/div/div/div/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3104b407-abe5-4d13-a742-68e02f7d3745",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c202ed78-f1c1-416d-ac18-bd932dbc44bb",
+      "comment": "",
+      "command": "echo",
+      "target": "loop index i: ${i}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75ec9c11-08b4-4e3e-8567-1cf0213dc9e0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${x}[${i}]",
+      "targets": [],
+      "value": "keyword"
+    }, {
+      "id": "6a1915fb-3caa-4718-9018-722563f24cc7",
+      "comment": "",
+      "command": "if",
+      "target": "${i} >=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5329c615-0226-41eb-a5e9-41d11e629551",
+      "comment": "",
+      "command": "echo",
+      "target": "Search keyword: + ${keyword}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "069d784e-24be-46dd-8f2d-0234a2461f45",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cfe81be-7135-4e84-8658-67632f4344ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchCourse",
+      "targets": [
+        ["id=searchCourse", "id"],
+        ["name=query", "name"],
+        ["css=#searchCourse", "css"],
+        ["css=#searchCourse", "css:finder"],
+        ["xpath=//input[@id='searchCourse']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/div/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${keyword}"
+    }, {
+      "id": "668687a8-3fd4-4dcf-a454-aed73083f7e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@value='Search']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/div/div/form/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7db215a-b556-42fb-8631-54626a198ec5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[3]/main/div/div[3]/div/div[2]/table/tbody/tr[1]/td[1]/span/a",
+      "targets": [],
+      "value": "${keyword}"
+    }, {
+      "id": "bc6af91d-fe1e-446d-a286-4eb3baf0405a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i}-1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "e7836bbc-1c02-4882-a1a7-877ba3d36f82",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${x}[${i}]",
+      "targets": [],
+      "value": "keyword"
+    }, {
+      "id": "89d0d6a3-4b3a-4507-85d5-2b88a3c3c3a9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[3]/div[1]/div/div/div[2]/ul/li[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "378f7a0c-1220-46e0-b9e3-564d6d32ca65",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${i} >=0",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56a9e977-33ac-4060-b628-fa0cafac51db",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57b15d88-8d3c-4e30-aea1-2489a0cdde3f"]
+  }],
+  "urls": ["https://www.leeds.ac.uk/"],
+  "plugins": []
+}

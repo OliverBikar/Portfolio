@@ -1,0 +1,37 @@
+Running 'TestCase_16072277'
+1.open on /... OK
+2.executeScript on return ["Computer Science with Mathematics", "Computer Science with Artificial Intelligence", "Computer Science"] with value x... OK
+echo: Computer Science with Mathematics,Computer Science with Artificial Intelligence,Computer Science
+4.store on 2 with value i... OK
+5.assertTitle on University of Leeds... OK
+6.setWindowSize on 945x1020... OK
+7.assertElementPresent on css=a.navicon-button... OK
+8.click on css=a.navicon-button... OK
+9.assertElementPresent on id=navItem1000... OK
+10.click on id=navItem1000... OK
+11.assertElementPresent on id=navItem116000... OK
+12.click on id=navItem116000... OK
+13.assertTitle on University of Leeds | Study > Undergraduate... OK
+14.assertElementPresent on css=.btn--hollow... OK
+15.click on css=.btn--hollow... OK
+16.assertTitle on University of Leeds | Course Search... OK
+17.assertElementPresent on id=searchCourse... OK
+18.assertElementPresent on xpath=/html/body/div[3]/main/div/div/form/div/div/div/div/div[3]/button... OK
+19.do on ... OK
+echo: loop index i: 2
+21.executeScript on return ${x}[${i}] with value keyword... OK
+22.if on ${i} >=0... OK
+echo: Search keyword: + Computer Science
+24.end on ... OK
+25.type on id=searchCourse with value ${keyword}... OK
+26.click on css=.btn-lg... OK
+27.assertText on xpath=/html/body/div[3]/main/div/div[3]/div/div[2]/table/tbody/tr[1]/td[1]/span/a with value ${keyword}... OK
+28.executeScript on return ${i}-1 with value i... OK
+29.executeScript on return ${x}[${i}] with value keyword... OK
+30.click on xpath=/html/body/div[3]/div[1]/div/div/div[2]/ul/li[1]/a... OK
+31.repeatIf on ${i} >=0... OK
+echo: loop index i: 1
+echo: Search keyword: + Computer Science with Artificial Intelligence
+echo: loop index i: ${i}
+echo: Search keyword: + Computer Science with Mathematics
+'TestCase_16072277' completed successfully
