@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Booking Summary</title> 
+		<link rel = "stylesheet" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Concert+One|Dosis:700|Trochut:700" rel="stylesheet">
+	</head>
+	
+	<body>
+
+	<div class = "navigation">
+	<ul>
+	  <div id = "logo"><img src="brookes_logo.png" width="190px" height="175px"></div>	
+	  <br>
+	  <li><a href="externaldashboard.html">Home</a></li>
+	  <li><a href="externalRoomSelect.html"><font color="#009999">Create Booking</a></li>
+	  <li><a href="externalManageBooking.html">Manage Booking</a></li>
+	  <li><a href="externalBookingHistory.html">Booking History</a></li>
+	  <li><a href="signOut.html">Sign Out</a></li>
+	</ul>
+	</div>
+		<div class="container">
+      <ul class="progressbar">
+          <li class="active">Select Room</li>
+          <li class= "active">Select Date and Time</li>
+          <li>Booking Summary</li>
+          <li>Payment </li>
+		  <li>Booking Confirmation</li>
+	</ul>
+	</div>
+	<div class = "subheading">
+		<h2> Booking Summary </h2>
+	</div>
+
+	
+	<div class = "summaryContent">
+	<form>
+	<b><label for="roomSelected">Room Selected: </label></b>
+	<input type="text" name="roomSelected" value= "Studio 1"><br><br>
+
+	<b><label for="date">Date: </label></b>
+	<input type="text" name="date" value= "10/04/18"><br><br>
+	
+	<b><label for="date">Start Time: </label></b>
+	<input type="text" name="startTime" value= "09:00am"><br><br>
+
+	<b><label for="date">End Time: </label></b>
+	<input type="text" name="endTime" value= "11:00am"><br><br>
+
+	<b><label for="date">Reason for Booking: </label></b>
+    <input type="text" name="reason" style="width: 300px;"><br>  
+	</form>
+	</div>
+	
+	<div class= "contactButton">
+	<input onclick="window.location.href='contactAdmin.html'" type="submit" value="Contact Booking Admin for Assistance">
+	</div>
+	
+	<div class= "contactButton">
+	<input onclick="window.location.href='https://shop.brookes.ac.uk/'" type="submit" value="Continue to Brookes Online Shop Payment">
+	</div>
+	
+	<div class = "backButton">
+	<input onclick="history.back()" type="submit" value="Back">
+	</div>
+</body>
+</html>
