@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Home </title> 
+		<link rel = "stylesheet" href = "style1.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Concert+One|Dosis:700|Trochut:700" rel="stylesheet">
+
+	</head>
+	
+	<body>
+
+	<div class = "navigation">
+	<ul>
+	  <div id = "logo"><img src="brookes_logo.png" width="190px" height="175px"></div>	
+	  <br>
+	  <li><a href="adminHome.html">Home</a></li>
+	  <li><a href="adminDashboard.html"><font color="#009999">Approve Bookings</a></li>
+	  <li><a href="adminViewAllBookings.html">View All Bookings</a></li>
+	  <li><a href="adminEmails.html">Emails</a></li>
+	  <li><a href="signOut.html">Sign Out</a></li>
+	</ul>
+	</div>
+	
+	<div class = "heading">
+		<h1> ECM Brookes Booking System </h1>
+	</div>
+
+	<div class = "userContent">
+	<img src="femaleUserIcon.png" alt="User Icon" height="60" width="60"> Welcome Admin
+	</div><br>
+	
+	<div class = "mainContent">
+	
+	<div class = "upcomingAppointments">
+	<h2>Bookings to approve: BOOKING 098524 APPROVED </h2>
+	<table class="recordsTable">
+		<tr>
+			<th> Ref No </th>
+			<th> Room </th>
+			<th> Date </th>
+			<th> Start Time </th>
+			<th> End Time </th>
+			<th> Duration </th>
+			<th> Approve </th>
+		</tr>	
+		
+		
+		
+		<tr>
+			<td>098234</td>
+			<td>Practical Room 1</td>
+			<td>Friday 9th November 2018</td>
+			<td>13:00pm</td>
+			<td>14:00pm</td>
+			<td>1 hour</td>	
+			<td><div class= "approveButton">
+			<input onclick= "approve()" type="submit"  value="Approve">
+			</div><div class= "approveButton">
+			<input onclick="reject()" type="submit" value="Reject">
+			</div>
+			</td>
+		</tr>
+
+	</table>
+	</div>
+	
+		<script>
+	function approve() {
+		var r = confirm("Are you sure?");
+		if (r == true) {
+			window.location.href= 'adminDashboardApproved.html';
+		} else {
+		}
+	}
+	
+	function reject() {
+		var r = confirm("Are you sure?");
+		if (r == true) {
+			window.location.href= 'adminDashboardReject.html';
+		} else {
+		}
+	}
+	</script>
+	
+
+	
+	</div>
+</body>
+</html>

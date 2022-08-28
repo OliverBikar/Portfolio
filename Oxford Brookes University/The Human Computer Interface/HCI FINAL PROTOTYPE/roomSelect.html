@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Select Room</title> 
+		<link rel = "stylesheet" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Concert+One|Dosis:700|Trochut:700" rel="stylesheet">
+	</head>
+	
+	<body>
+
+	<div class = "navigation">
+	<ul>
+	  <div id = "logo"><img src="brookes_logo.png" width="190px" height="175px"></div>	
+	  <br>
+	  <li><a href="dashboard.html">Home</a></li>
+	  <li><a href="roomSelect.html"><font color="#009999">Create Booking</a></li>
+	  <li><a href="manageBooking.html">Manage Booking</a></li>
+	  <li><a href="bookingHistory.html">Booking History</a></li>
+	  <li><a href="signOut.html">Sign Out</a></li>
+	</ul>
+	</div>
+	<div class="container">
+      <ul class="progressbar">
+          <li>Select Room</li>
+          <li>Select Date and Time</li>
+          <li>Booking Summary</li>
+          <li>Terms and Conditions</li>
+		  <li>Booking Confirmation</li>
+	</ul>
+	</div>
+	<div class = "subheading">
+		<h2> Select A Room </h2>
+	</div>
+
+	<div class = "roomContent">
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'practicalRoom1')">Practical Room 1</button>
+	  <button class="tablinks" onclick="openCity(event, 'practicalRoom2')">Practical Room 2</button>
+	  <button class="tablinks" onclick="openCity(event, 'studio1')">Computer 1 </button>
+	  <button class="tablinks" onclick="openCity(event, 'studio2')">Computer 2 </button>
+	  <button class="tablinks" onclick="openCity(event, 'meeting1')">Meeting Room 1</button>
+	  <button class="tablinks" onclick="openCity(event, 'meeting2')">Meeting Room 2 </button>
+	</div>
+
+	<div id="practicalRoom1" class="tabcontent" >
+	  <img src="practicalRoomOne.jpg" alt="Room One" height="235" width="450"> 
+	  <div class= "roomInfo"> 
+	  <h3> Room Information </h3>
+	  
+	  <p> This room is perfect for student, staff or guests. <br>It can be used for teaching, group work or events. <br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+
+	<div id="practicalRoom2" class="tabcontent">
+	  <img src="practicalRoomTwo.jpg" alt="Room One" height="235" width="450"> 
+	  <div class= "roomInfoTwo"> 
+	  <h3> Room Information </h3>
+	   <p> This room is perfect for student, staff or guests. <br>It can be used for teaching, group work or events. <br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+
+	
+	<div id="studio1" class="tabcontent">
+	  <img src="studioOne.jpg" alt="Room One" height="235" width="450"> 
+	  <div class= "roomInfoThree"> 
+	 <h3> Room Information </h3>
+	  <p> The studio should only be used for recording purposes. <br>Please ensure all recording are saved as we cannot <br>back up your work.<br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+	  	<li>Computers<br></li>
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+
+	<div id="studio2" class="tabcontent">
+	  <img src="studioTwo.jpg" alt="Room One" height="235" width="450"> 
+     <div class= "roomInfoFour"> 
+	 <h3> Room Information </h3>
+	  <p> The studio should only be used for recording purposes. <br>Please ensure all recording are saved as we cannot <br>back up your work.<br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+	  	<li>Computers<br></li>
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+	
+		<div id="meeting1" class="tabcontent">
+	  <img src="MeetingOne.jfif" alt="Room One" height="235" width="450"> 
+	  <div class= "roomInfoFive"> 
+	  <h3> Room Information </h3>
+	   <p> This room is perfect for meetings<br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+
+	<div id="meeting2" class="tabcontent">
+	  <img src="MeetingTwo.jfif" alt="Room One" height="235" width="450"> 
+     <div class= "roomInfoSix"> 
+	  <h3> Room Information </h3>
+	   <p> This room is perfect for meetings <br>The following is provided in this room:<br> </p>
+	  <ol type="a">
+		<li>Touchscreen smart screen<br></li>
+		<li>Chairs and tables.</li>
+	  </ol>
+	  </div>
+	</div>
+
+
+	
+	<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	</script>
+</div>
+
+	
+	<div class= "selectButton">
+	<input onclick="window.location.href='timeDate.html'" type="submit" value="Select Room">
+	</div>
+	
+	
+</body>
+</html>
